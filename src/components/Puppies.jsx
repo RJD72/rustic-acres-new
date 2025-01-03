@@ -1,21 +1,25 @@
+import Image1 from "../assets/images/image1.jpg";
+import Image2 from "../assets/images/image2.jpg";
+import Image3 from "../assets/images/image3.jpg";
+
 const Puppies = () => {
   const puppies = [
     {
       id: 1,
       name: "Bella",
-      image: "src/assets/images/image1.jpg",
+      image: Image1,
       description: "Playful and loving.",
     },
     {
       id: 2,
       name: "Charlie",
-      image: "src/assets/images/image2.jpg",
+      image: Image2,
       description: "Friendly and energetic.",
     },
     {
       id: 3,
       name: "Daisy",
-      image: "src/assets/images/image3.jpg",
+      image: Image3,
       description: "Gentle and affectionate.",
     },
   ];
