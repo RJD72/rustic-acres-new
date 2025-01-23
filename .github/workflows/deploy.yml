@@ -1,4 +1,4 @@
-name: Deploy React App to GitHub Pages
+name: Deploy Vite App to GitHub Pages
 
 on:
   push:
@@ -18,14 +18,14 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: 16
 
       # Install dependencies
       - name: Install Dependencies
         run: npm install
 
-      # Build the React app
-      - name: Build React App
+      # Build the Vite app
+      - name: Build Vite App
         run: npm run build
 
       # Deploy to GitHub Pages
@@ -33,4 +33,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+          publish_dir: ./dist
